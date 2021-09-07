@@ -1,15 +1,15 @@
 export const Api = {
-	baseUrl: "https://backendrickandmorty.herokuapp.com/personagens",
+	baseUrl: "https://backendrickandmorty.herokuapp.com",
 
-	createUrl: () => Api.baseUrl + "/",
+	createUrl: () => Api.baseUrl + "/personagens/create",
 
-	readAllUrl: () => Api.baseUrl + "/",
-	readSingleUrl: (id) => Api.baseUrl + "/" + id,
+	readAllUrl: () => Api.baseUrl + "/personagens",
+	readSingleUrl: (id) => Api.baseUrl + "/personagens/" + id,
 
-	updateUrl: (id) => Api.baseUrl + "/" + id,
+	updateUrl: (id) => Api.baseUrl + "/personagens/update/" + id,
 
-	deleteUrl: (id) => Api.baseUrl + "/" + id,
-	deleteAllUrl: () => Api.baseUrl + "/",
+	deleteUrl: (id) => Api.baseUrl + "/personagens/delete/" + id,
+	//deleteAllUrl: () => Api.baseUrl + "/",
 
 	// Create
 	buildApiPostRequest: (url, body) => {
